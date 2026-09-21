@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CyberSecurity Study Hubs — Unified executive command center bridging reactive SOC operations (eSOC) and proactive enterprise threat hunting (eCTHP)." />
+  <meta name="theme-color" content="#090a0f" />
+  <title>CyberSecurity Study Hubs | Command Center Portal</title>
+  <link rel="stylesheet" href="assets/css/portal.css" />
+</head>
+<body>
+  <div class="portal-container">
+    <!-- Top Navigation Bar -->
+    <header class="top-navbar" role="banner">
+      <a href="#overview" class="brand" onclick="switchView('overview')">
+        <div class="brand-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="M12 8v4"/>
+            <path d="M12 16h.01"/>
+          </svg>
+        </div>
+        <div class="brand-info">
+          <h1>CyberSecurity Study Hubs</h1>
+          <p>Executive Command Center &amp; Study Portals</p>
+        </div>
+      </a>
+
+      <div class="nav-actions">
+        <span class="status-badge">
+          <span class="status-dot"></span>
+          PORTAL ONLINE
+        </span>
+        <a href="https://github.com/TOOSHY2/CyberSecurity-Study-Hubs" target="_blank" rel="noopener noreferrer" class="btn-ghost" title="GitHub Repository">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+          Repository
+        </a>
+      </div>
+    </header>
+
+    <!-- Navigation View Tabs -->
+    <nav class="view-tabs" role="tablist" aria-label="Portal Views">
+      <button class="tab-btn active" id="tab-overview" role="tab" aria-selected="true" aria-controls="view-overview" onclick="switchView('overview')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="7" height="7"/>
+          <rect x="14" y="3" width="7" height="7"/>
+          <rect x="14" y="14" width="7" height="7"/>
+          <rect x="3" y="14" width="7" height="7"/>
+        </svg>
+        Command Center
+      </button>
+      <button class="tab-btn" id="tab-esoc" role="tab" aria-selected="false" aria-controls="view-esoc" onclick="switchView('esoc')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+        eSOC Live Hub
+      </button>
+      <button class="tab-btn" id="tab-ecthp" role="tab" aria-selected="false" aria-controls="view-ecthp" onclick="switchView('ecthp')">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="22" y1="12" x2="18" y2="12"/>
+          <line x1="6" y1="12" x2="2" y2="12"/>
+          <line x1="12" y1="6" x2="12" y2="2"/>
+          <line x1="12" y1="22" x2="12" y2="18"/>
+        </svg>
+        eCTHP Live Hub
+      </button>
+    </nav>
+
+    <!-- VIEW 1: COMMAND CENTER / OVERVIEW -->
+    <main class="view-panel active" id="view-overview" role="tabpanel" aria-labelledby="tab-overview">
+      <section class="hero">
+        <div class="hero-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+          Enterprise Cyber Defense Architecture
+        </div>
+        <h2 class="hero-title">
+          Security Operations &amp; <span class="accent-cyan">Threat Hunting</span> Knowledge Base
+        </h2>
+        <p class="hero-desc">
+          A synchronized, interactive repository bridging reactive Level 1 Security Operations Center (SOC) incident triage and proactive enterprise threat hunting methodologies mapped to INE Security professional curriculums.
+        </p>
+      </section>
+
+      <!-- Metrics Matrix -->
+      <section class="stats-bar" aria-label="Curriculum Statistics">
+        <div class="stat-card">
+          <div class="stat-val">2 <span class="unit">Specializations</span></div>
+          <div class="stat-label">Reactive &amp; Proactive Ops</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">15 <span class="unit">Courses</span></div>
+          <div class="stat-label">Structured Modular Notes</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">100+ <span class="unit">Hours</span></div>
+          <div class="stat-label">Curriculum Scope Covered</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val">100% <span class="unit">Client-Side</span></div>
+          <div class="stat-label">Offline &amp; Pages Ready</div>
+        </div>
+      </section>
+
+      <!-- Dual Hub Cards -->
+      <section class="hubs-grid" aria-label="Interactive Hubs">
+        <!-- eSOC Card -->
+        <article class="hub-card esoc">
+          <div class="hub-header">
+            <span class="hub-badge">Defensive Tier 1</span>
+            <div class="hub-icon-wrapper" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="hub-title">eSOC Study Hub</h3>
+          <div class="hub-subtitle">INE Security Operations Certified – Level 1</div>
+          <p class="hub-summary">
+            A comprehensive, modular study hub designed for frontline SOC analysts. Focuses on reactive defensive operations, continuous monitoring, security telemetry triage, alert escalation, network packet analysis, and baseline incident response workflows.
+          </p>
+          <div class="hub-tags">
+            <span class="tag-pill">10 Courses</span>
+            <span class="tag-pill">76h 57m Duration</span>
+            <span class="tag-pill">SIEM &amp; Log Analysis</span>
+            <span class="tag-pill">Wireshark &amp; TCPDump</span>
+            <span class="tag-pill">Incident Handling</span>
+          </div>
+          <div class="hub-actions">
+            <button class="btn-primary" onclick="switchView('esoc')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"/>
+              </svg>
+              Launch Live Hub
+            </button>
+            <a href="hubs/eSOC.html" target="_blank" rel="noopener noreferrer" class="btn-secondary" title="Open eSOC in new tab">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+              Open Tab
+            </a>
+          </div>
+        </article>
+
+        <!-- eCTHP Card -->
+        <article class="hub-card ecthp">
+          <div class="hub-header">
+            <span class="hub-badge">Threat Hunting</span>
+            <div class="hub-icon-wrapper" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="22" y1="12" x2="18" y2="12"/>
+                <line x1="6" y1="12" x2="2" y2="12"/>
+                <line x1="12" y1="6" x2="12" y2="2"/>
+                <line x1="12" y1="22" x2="12" y2="18"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="hub-title">eCTHP Study Hub</h3>
+          <div class="hub-subtitle">INE Certified Threat Hunting Professional</div>
+          <p class="hub-summary">
+            An advanced hunting portal focused on hypothesis-driven detection of advanced adversaries who evade automated defenses. Covers threat intelligence integration, hunting strategies, endpoint anomalies, memory forensics, and network beacon analysis.
+          </p>
+          <div class="hub-tags">
+            <span class="tag-pill">5 Core Courses</span>
+            <span class="tag-pill">Hypothesis Generation</span>
+            <span class="tag-pill">Cyber Threat Intel (CTI)</span>
+            <span class="tag-pill">Endpoint Forensics</span>
+            <span class="tag-pill">MITRE ATT&amp;CK Mapping</span>
+          </div>
+          <div class="hub-actions">
+            <button class="btn-primary" onclick="switchView('ecthp')">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"/>
+              </svg>
+              Launch Live Hub
+            </button>
+            <a href="hubs/eCTHP.html" target="_blank" rel="noopener noreferrer" class="btn-secondary" title="Open eCTHP in new tab">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+              Open Tab
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Operational Matrix Section -->
+      <section class="matrix-section">
+        <h3 class="matrix-title">Operational Architecture: Reactive vs. Proactive</h3>
+        <p class="matrix-subtitle">How the two study hubs complement each other within a modern enterprise cyber defense lifecycle.</p>
+        <div class="matrix-table-wrap">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th>Operational Dimension</th>
+                <th>eSOC Hub (Reactive Defense)</th>
+                <th>eCTHP Hub (Proactive Hunting)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="col-feature">Primary Mindset</td>
+                <td class="col-esoc">Alert-Driven: "What triggered this alert?"</td>
+                <td class="col-ecthp">Hypothesis-Driven: "Where is an attacker hiding right now?"</td>
+              </tr>
+              <tr>
+                <td class="col-feature">Trigger Mechanism</td>
+                <td class="col-esoc">SIEM alerts, automated detections, IDS signatures</td>
+                <td class="col-ecthp">Threat intelligence reports, TTP patterns, anomalous baselines</td>
+              </tr>
+              <tr>
+                <td class="col-feature">Key Tooling &amp; Data</td>
+                <td class="col-esoc">SIEM queries, PCAP analysis, EDR triage consoles</td>
+                <td class="col-ecthp">Event log telemetry, memory volatility, persistence scanners</td>
+              </tr>
+              <tr>
+                <td class="col-feature">Outcome &amp; Deliverable</td>
+                <td class="col-esoc">Triage verdict (True/False Positive), containment escalation</td>
+                <td class="col-ecthp">New detection rules, gap remediation, undetected breach discovery</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- VIEW 2: eSOC LIVE EMBEDDED HUB -->
+    <section class="view-panel" id="view-esoc" role="tabpanel" aria-labelledby="tab-esoc">
+      <div class="iframe-portal-wrapper" id="esoc-wrapper">
+        <div class="iframe-toolbar">
+          <div class="iframe-status">
+            <span class="status-badge" style="background: rgba(59, 130, 246, 0.15); color: var(--purple-2); border-color: var(--border-blue);">
+              eSOC Live Hub
+            </span>
+            <span>Security Operations Certified – Level 1</span>
+          </div>
+          <div class="iframe-actions">
+            <button class="btn-ghost" onclick="reloadFrame('frame-esoc')" title="Reload Hub">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="23 4 23 10 17 10"/>
+                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+              </svg>
+              Reload
+            </button>
+            <button class="btn-ghost" onclick="toggleFullscreen('esoc-wrapper')" title="Toggle Fullscreen">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 3 21 3 21 9"/>
+                <polyline points="9 21 3 21 3 15"/>
+                <line x1="21" y1="3" x2="14" y2="10"/>
+                <line x1="3" y1="21" x2="10" y2="14"/>
+              </svg>
+              Fullscreen
+            </button>
+            <a href="hubs/eSOC.html" target="_blank" rel="noopener noreferrer" class="btn-ghost" title="Open in dedicated tab">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+              Standalone
+            </a>
+          </div>
+        </div>
+        <div class="iframe-container">
+          <iframe id="frame-esoc" data-src="hubs/eSOC.html" title="eSOC Study Hub Live Preview" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW 3: eCTHP LIVE EMBEDDED HUB -->
+    <section class="view-panel" id="view-ecthp" role="tabpanel" aria-labelledby="tab-ecthp">
+      <div class="iframe-portal-wrapper" id="ecthp-wrapper">
+        <div class="iframe-toolbar">
+          <div class="iframe-status">
+            <span class="status-badge" style="background: rgba(34, 211, 238, 0.15); color: var(--cyan); border-color: var(--border-cyan);">
+              eCTHP Live Hub
+            </span>
+            <span>Certified Threat Hunting Professional</span>
+          </div>
+          <div class="iframe-actions">
+            <button class="btn-ghost" onclick="reloadFrame('frame-ecthp')" title="Reload Hub">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="23 4 23 10 17 10"/>
+                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+              </svg>
+              Reload
+            </button>
+            <button class="btn-ghost" onclick="toggleFullscreen('ecthp-wrapper')" title="Toggle Fullscreen">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 3 21 3 21 9"/>
+                <polyline points="9 21 3 21 3 15"/>
+                <line x1="21" y1="3" x2="14" y2="10"/>
+                <line x1="3" y1="21" x2="10" y2="14"/>
+              </svg>
+              Fullscreen
+            </button>
+            <a href="hubs/eCTHP.html" target="_blank" rel="noopener noreferrer" class="btn-ghost" title="Open in dedicated tab">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+              Standalone
+            </a>
+          </div>
+        </div>
+        <div class="iframe-container">
+          <iframe id="frame-ecthp" data-src="hubs/eCTHP.html" title="eCTHP Study Hub Live Preview" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="portal-footer" role="contentinfo">
+      <div class="disclaimer-box">
+        <strong>Academic &amp; Professional Attribution Notice:</strong>
+        This repository and its interactive study hubs are independent, personal educational resources created for certification preparation and reference. All syllabi, course names, and learning paths are property of <strong>INE Security (formerly eLearnSecurity)</strong>. The content represents original synthesis, personal notes, and publicly documented security methodologies. <em>No proprietary examination questions, leaked test dumps, or confidential enterprise data are contained within this repository.</em>
+      </div>
+      <div class="footer-content">
+        <p>&copy; 2026 CyberSecurity Study Hubs. Released under the MIT License.</p>
+        <p>Architected for GitHub Pages &amp; Offline Performance.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Interactive Portal Controller -->
+  <script>
+    function switchView(viewName) {
+      // Manage tab buttons
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-selected', 'false');
+      });
+      const activeBtn = document.getElementById('tab-' + viewName);
+      if (activeBtn) {
+        activeBtn.classList.add('active');
+        activeBtn.setAttribute('aria-selected', 'true');
+      }
+
+      // Manage view panels
+      document.querySelectorAll('.view-panel').forEach(panel => {
+        panel.classList.remove('active');
+      });
+      const activePanel = document.getElementById('view-' + viewName);
+      if (activePanel) {
+        activePanel.classList.add('active');
+      }
+
+      // Lazy-load iframe source if switching to embed
+      if (viewName === 'esoc') {
+        const frame = document.getElementById('frame-esoc');
+        if (frame && !frame.src) {
+          frame.src = frame.getAttribute('data-src');
+        }
+      } else if (viewName === 'ecthp') {
+        const frame = document.getElementById('frame-ecthp');
+        if (frame && !frame.src) {
+          frame.src = frame.getAttribute('data-src');
+        }
+      }
+
+      // Update location hash without page jump
+      history.replaceState(null, '', '#' + viewName);
+    }
+
+    function reloadFrame(frameId) {
+      const frame = document.getElementById(frameId);
+      if (frame && frame.src) {
+        frame.src = frame.src;
+      }
+    }
+
+    function toggleFullscreen(wrapperId) {
+      const wrapper = document.getElementById(wrapperId);
+      if (wrapper) {
+        wrapper.classList.toggle('fullscreen-mode');
+      }
+    }
+
+    // Handle hash on page load
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash === 'esoc' || hash === 'ecthp') {
+        switchView(hash);
+      } else {
+        switchView('overview');
+      }
+    });
+
+    // Close fullscreen with Escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.iframe-portal-wrapper.fullscreen-mode').forEach(el => {
+          el.classList.remove('fullscreen-mode');
+        });
+      }
+    });
+  </script>
+</body>
+</html>

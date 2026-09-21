@@ -1,0 +1,48 @@
+MIT License
+
+Copyright (c) 2026 Hasan (TOOSHY) / CyberSecurity-Study-Hubs Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+--------------------------------------------------------------------------------
+DEDICATED PRIVACY, SECURITY & EDUCATIONAL USE NOTICE
+--------------------------------------------------------------------------------
+
+1. NON-CONFIDENTIALITY & PROPRIETARY EXCLUSION:
+   This repository contains exclusively personal study notes, publicly available
+   cybersecurity concepts, and synthesized methodologies for educational
+   enablement. Under no circumstances does this repository host, distribute, or
+   reference:
+   - Proprietary examination questions, answers, or dumps from INE Security
+     (formerly eLearnSecurity) or any other certification vendor.
+   - Non-public enterprise logs, live production network captures, internal IP
+     addresses, credentials, or proprietary organizational artifacts.
+
+2. TRADEMARK & ACADEMIC ATTRIBUTION:
+   "eSOC", "eCTHP", and related certification curriculum marks are trademarks
+   and intellectual property of INE Security. This project is an independent
+   study endeavor and is not officially sponsored, endorsed, or affiliated with
+   INE Security.
+
+3. ETHICAL SECURITY RESEARCH & DUAL-USE WARNING:
+   The defensive triage strategies, query syntax, and detection methodologies
+   described herein are intended solely for authorized defensive operations,
+   adversary emulation in controlled laboratory environments, and academic study.
+   Users are strictly responsible for complying with all applicable local,
+   state, and international cybersecurity laws.
