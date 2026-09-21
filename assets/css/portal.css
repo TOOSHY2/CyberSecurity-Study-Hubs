@@ -549,6 +549,160 @@ body::before {
   border-color: var(--border-bright);
 }
 
+/* Hub Visual Preview Images */
+.hub-preview-wrapper {
+  margin: 1.25rem 0 1.5rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #090a0f;
+  position: relative;
+  transition: var(--transition);
+}
+
+.hub-preview-wrapper:hover {
+  border-color: var(--border-bright);
+}
+
+.hub-preview-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.hub-preview-wrapper:hover .hub-preview-img {
+  transform: scale(1.02);
+}
+
+/* 3-Way Launch Options */
+.launch-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 0.6rem;
+  margin-top: 1.25rem;
+}
+
+@media (max-width: 520px) {
+  .launch-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.btn-launch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.7rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.btn-launch.primary-esoc {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+}
+.btn-launch.primary-esoc:hover {
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  transform: translateY(-1px);
+}
+
+.btn-launch.primary-ecthp {
+  background: linear-gradient(135deg, #0284c7, #06b6d4);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(6, 182, 212, 0.35);
+}
+.btn-launch.primary-ecthp:hover {
+  background: linear-gradient(135deg, #0369a1, #0284c7);
+  transform: translateY(-1px);
+}
+
+.btn-launch.secondary {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--border);
+  color: var(--text);
+}
+.btn-launch.secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--border-bright);
+}
+
+/* Syllabus Quick Drawer */
+.syllabus-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.75rem;
+  background: transparent;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--muted);
+  font-size: 0.78rem;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-bottom: 1rem;
+}
+
+.syllabus-toggle:hover {
+  color: var(--text);
+  border-color: var(--cyan);
+  background: rgba(34, 211, 238, 0.05);
+}
+
+.syllabus-list {
+  display: none;
+  background: rgba(15, 16, 25, 0.9);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.8rem;
+}
+
+.syllabus-list.is-open {
+  display: block;
+}
+
+.syllabus-list ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.syllabus-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #cbd5e1;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.syllabus-list li:last-child {
+  border-bottom: none;
+}
+
+.syllabus-list .course-code {
+  font-family: monospace;
+  color: var(--cyan);
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.syllabus-list .course-dur {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
 /* Comparison / Philosophy Matrix */
 .matrix-section {
   background: var(--panel);

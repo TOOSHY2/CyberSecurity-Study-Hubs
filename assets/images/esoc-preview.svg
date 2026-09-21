@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0e17"/>
+      <stop offset="50%" stop-color="#090a0f"/>
+      <stop offset="100%" stop-color="#050608"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181924" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#12131c" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background Window Chrome -->
+  <rect width="900" height="520" rx="16" fill="url(#bgGrad)" stroke="#222436" stroke-width="1.5" filter="url(#dropShadow)"/>
+
+  <!-- Top Window Header / Title Bar -->
+  <rect width="900" height="42" rx="16" fill="#13141f" stroke="#222436" stroke-width="1"/>
+  <!-- Traffic Lights -->
+  <circle cx="28" cy="21" r="6" fill="#fb7185"/>
+  <circle cx="48" cy="21" r="6" fill="#fbbf24"/>
+  <circle cx="68" cy="21" r="6" fill="#4ade80"/>
+  
+  <!-- URL Bar -->
+  <rect x="130" y="10" width="640" height="22" rx="6" fill="#090a0f" stroke="#25273c" stroke-width="1"/>
+  <text x="350" y="25" fill="#a9acbd" font-family="Inter, -apple-system, sans-serif" font-size="11" font-weight="500">hubs/eSOC.html — Security Operations Certified L1</text>
+  
+  <!-- Content Area: eSOC UI Preview -->
+  <!-- Ambient glow effects -->
+  <circle cx="150" cy="180" r="140" fill="#3b82f6" opacity="0.12" filter="blur(50px)"/>
+  <circle cx="750" cy="400" r="160" fill="#22d3ee" opacity="0.08" filter="blur(60px)"/>
+
+  <!-- Site Brand Header -->
+  <rect x="50" y="65" width="48" height="48" rx="12" fill="#2563eb" fill-opacity="0.2" stroke="#3b82f6" stroke-width="1.5"/>
+  <path d="M74 76 L86 82 L86 94 L74 100 L62 94 L62 82 Z" fill="none" stroke="#60a5fa" stroke-width="2"/>
+  <path d="M74 84 L74 92" stroke="#22d3ee" stroke-width="2"/>
+
+  <text x="112" y="86" fill="#f7f7fb" font-family="Inter, sans-serif" font-size="18" font-weight="700">eSOC Study Hub</text>
+  <text x="112" y="103" fill="#a9acbd" font-family="Inter, sans-serif" font-size="12">INE Security Operations Certified – Level 1 Reference</text>
+
+  <!-- Status Pill -->
+  <rect x="730" y="72" width="120" height="28" rx="14" fill="#2563eb" fill-opacity="0.15" stroke="#3b82f6" stroke-width="1"/>
+  <circle cx="746" cy="86" r="4" fill="#4ade80"/>
+  <text x="758" y="90" fill="#60a5fa" font-family="Inter, sans-serif" font-size="11" font-weight="600">10 COURSES</text>
+
+  <!-- Shortcut Pills / Navigation Bar -->
+  <rect x="50" y="130" width="800" height="42" rx="10" fill="#13141f" stroke="#222436" stroke-width="1"/>
+  <rect x="60" y="136" width="90" height="30" rx="8" fill="#2563eb" fill-opacity="0.3" stroke="#3b82f6" stroke-width="1"/>
+  <text x="75" y="156" fill="#ffffff" font-family="Inter, sans-serif" font-size="12" font-weight="600">C01 Intro</text>
+  <text x="175" y="156" fill="#a9acbd" font-family="Inter, sans-serif" font-size="12">C02 NetDef</text>
+  <text x="275" y="156" fill="#a9acbd" font-family="Inter, sans-serif" font-size="12">C03 Logs</text>
+  <text x="365" y="156" fill="#a9acbd" font-family="Inter, sans-serif" font-size="12">C04 SIEM</text>
+  <text x="450" y="156" fill="#a9acbd" font-family="Inter, sans-serif" font-size="12">C05 Triage</text>
+  <text x="540" y="156" fill="#a9acbd" font-family="Inter, sans-serif" font-size="12">C06 PCAP</text>
+  <text x="630" y="156" fill="#a9acbd" font-family="Inter, sans-serif" font-size="12">C07 IR Ops</text>
+  <text x="720" y="156" fill="#a9acbd" font-family="Inter, sans-serif" font-size="12">C08+ More</text>
+
+  <!-- 3 Modular Cards Preview -->
+  <!-- Card 1: Network Defense -->
+  <rect x="50" y="195" width="250" height="285" rx="12" fill="url(#cardGrad)" stroke="#27293d" stroke-width="1"/>
+  <rect x="50" y="195" width="250" height="4" rx="2" fill="url(#blueGlow)"/>
+  <text x="70" y="225" fill="#60a5fa" font-family="Inter, sans-serif" font-size="10" font-weight="700" letter-spacing="1">COURSE 02</text>
+  <text x="70" y="248" fill="#ffffff" font-family="Inter, sans-serif" font-size="16" font-weight="700">Network Defense</text>
+  <text x="70" y="270" fill="#a9acbd" font-family="Inter, sans-serif" font-size="11">Architecture, Firewalls, IDS/IPS</text>
+  <line x1="70" y1="285" x2="280" y2="285" stroke="#25273c"/>
+  <rect x="70" y="300" width="210" height="24" rx="4" fill="#1f2133"/>
+  <text x="80" y="316" fill="#cbd5e1" font-family="monospace" font-size="10">tcpdump -nn -s0 -X</text>
+  <rect x="70" y="332" width="210" height="24" rx="4" fill="#1f2133"/>
+  <text x="80" y="348" fill="#cbd5e1" font-family="monospace" font-size="10">wireshark filter: http</text>
+  <rect x="70" y="364" width="210" height="24" rx="4" fill="#1f2133"/>
+  <text x="80" y="380" fill="#cbd5e1" font-family="monospace" font-size="10">zeek-cut id.orig_h</text>
+  <rect x="70" y="420" width="210" height="34" rx="6" fill="#2563eb" fill-opacity="0.2" stroke="#3b82f6" stroke-width="1"/>
+  <text x="120" y="442" fill="#60a5fa" font-family="Inter, sans-serif" font-size="12" font-weight="600">Inspect Course</text>
+
+  <!-- Card 2: SIEM & Log Analysis -->
+  <rect x="325" y="195" width="250" height="285" rx="12" fill="url(#cardGrad)" stroke="#27293d" stroke-width="1"/>
+  <rect x="325" y="195" width="250" height="4" rx="2" fill="url(#cyanGlow)"/>
+  <text x="345" y="225" fill="#22d3ee" font-family="Inter, sans-serif" font-size="10" font-weight="700" letter-spacing="1">COURSE 04</text>
+  <text x="345" y="248" fill="#ffffff" font-family="Inter, sans-serif" font-size="16" font-weight="700">SIEM &amp; Log Analysis</text>
+  <text x="345" y="270" fill="#a9acbd" font-family="Inter, sans-serif" font-size="11">Elastic, Splunk, Alert Triage</text>
+  <line x1="345" y1="285" x2="555" y2="285" stroke="#25273c"/>
+  <rect x="345" y="300" width="210" height="24" rx="4" fill="#1f2133"/>
+  <text x="355" y="316" fill="#cbd5e1" font-family="monospace" font-size="10">index=* EventCode=4624</text>
+  <rect x="345" y="332" width="210" height="24" rx="4" fill="#1f2133"/>
+  <text x="355" y="348" fill="#cbd5e1" font-family="monospace" font-size="10">Sysmon Event ID 1 (Proc)</text>
+  <rect x="345" y="364" width="210" height="24" rx="4" fill="#1f2133"/>
+  <text x="355" y="380" fill="#cbd5e1" font-family="monospace" font-size="10">KQL: SecurityEvent | ...</text>
+  <rect x="345" y="420" width="210" height="34" rx="6" fill="#06b6d4" fill-opacity="0.2" stroke="#22d3ee" stroke-width="1"/>
+  <text x="395" y="442" fill="#22d3ee" font-family="Inter, sans-serif" font-size="12" font-weight="600">Inspect Course</text>
+
+  <!-- Card 3: Incident Response -->
+  <rect x="600" y="195" width="250" height="285" rx="12" fill="url(#cardGrad)" stroke="#27293d" stroke-width="1"/>
+  <rect x="600" y="195" width="250" height="4" rx="2" fill="url(#blueGlow)"/>
+  <text x="620" y="225" fill="#60a5fa" font-family="Inter, sans-serif" font-size="10" font-weight="700" letter-spacing="1">COURSE 07</text>
+  <text x="620" y="248" fill="#ffffff" font-family="Inter, sans-serif" font-size="16" font-weight="700">Incident Response</text>
+  <text x="620" y="270" fill="#a9acbd" font-family="Inter, sans-serif" font-size="11">Containment, Eradication, RCA</text>
+  <line x1="620" y1="285" x2="830" y2="285" stroke="#25273c"/>
+  <rect x="620" y="300" width="210" height="24" rx="4" fill="#1f2133"/>
+  <text x="630" y="316" fill="#cbd5e1" font-family="monospace" font-size="10">NIST SP 800-61 Lifecycle</text>
+  <rect x="620" y="332" width="210" height="24" rx="4" fill="#1f2133"/>
+  <text x="630" y="348" fill="#cbd5e1" font-family="monospace" font-size="10">Isolate Endpoint Action</text>
+  <rect x="620" y="364" width="210" height="24" rx="4" fill="#1f2133"/>
+  <text x="630" y="380" fill="#cbd5e1" font-family="monospace" font-size="10">Evidence Chain of Custody</text>
+  <rect x="620" y="420" width="210" height="34" rx="6" fill="#2563eb" fill-opacity="0.2" stroke="#3b82f6" stroke-width="1"/>
+  <text x="670" y="442" fill="#60a5fa" font-family="Inter, sans-serif" font-size="12" font-weight="600">Inspect Course</text>
+</svg>

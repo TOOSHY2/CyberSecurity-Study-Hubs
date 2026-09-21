@@ -122,9 +122,18 @@
           </div>
           <h3 class="hub-title">eSOC Study Hub</h3>
           <div class="hub-subtitle">INE Security Operations Certified – Level 1</div>
+          
+          <!-- Visual Preview Mockup -->
+          <div class="hub-preview-wrapper">
+            <a href="hubs/eSOC.html" title="Open eSOC Study Hub">
+              <img src="assets/images/esoc-preview.svg" alt="eSOC Study Hub Dashboard Preview" class="hub-preview-img" width="900" height="520" loading="lazy" />
+            </a>
+          </div>
+
           <p class="hub-summary">
             A comprehensive, modular study hub designed for frontline SOC analysts. Focuses on reactive defensive operations, continuous monitoring, security telemetry triage, alert escalation, network packet analysis, and baseline incident response workflows.
           </p>
+
           <div class="hub-tags">
             <span class="tag-pill">10 Courses</span>
             <span class="tag-pill">76h 57m Duration</span>
@@ -132,20 +141,53 @@
             <span class="tag-pill">Wireshark &amp; TCPDump</span>
             <span class="tag-pill">Incident Handling</span>
           </div>
-          <div class="hub-actions">
-            <button class="btn-primary" onclick="switchView('esoc')">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+          <!-- Quick Syllabus Drawer -->
+          <button class="syllabus-toggle" onclick="toggleSyllabus('esoc-syllabus')" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+              <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+            </svg>
+            Explore 10 Modules Syllabus
+          </button>
+          <div class="syllabus-list" id="esoc-syllabus">
+            <ul>
+              <li><span><span class="course-code">C01</span> Introduction to SOC Operations</span><span class="course-dur">04h 15m</span></li>
+              <li><span><span class="course-code">C02</span> Network Defense Fundamentals</span><span class="course-dur">08h 30m</span></li>
+              <li><span><span class="course-code">C03</span> Endpoint Telemetry &amp; Event Logs</span><span class="course-dur">07h 45m</span></li>
+              <li><span><span class="course-code">C04</span> SIEM Operations &amp; Query Tuning</span><span class="course-dur">11h 20m</span></li>
+              <li><span><span class="course-code">C05</span> Alert Triage &amp; True/False Positives</span><span class="course-dur">06h 50m</span></li>
+              <li><span><span class="course-code">C06</span> Network Packet Analysis (Wireshark)</span><span class="course-dur">09h 10m</span></li>
+              <li><span><span class="course-code">C07</span> Incident Response Lifecycle (NIST)</span><span class="course-dur">08h 15m</span></li>
+              <li><span><span class="course-code">C08</span> Threat Intelligence in Tier 1</span><span class="course-dur">05h 40m</span></li>
+              <li><span><span class="course-code">C09</span> Forensics &amp; Evidence Handling</span><span class="course-dur">07h 35m</span></li>
+              <li><span><span class="course-code">C10</span> SOC Automation &amp; SOAR Concepts</span><span class="course-dur">07h 37m</span></li>
+            </ul>
+          </div>
+
+          <!-- 3-Way Simplified Launch Options -->
+          <div class="launch-grid">
+            <a href="hubs/eSOC.html" class="btn-launch primary-esoc" title="Launch eSOC in Full Window">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polygon points="5 3 19 12 5 21 5 3"/>
               </svg>
-              Launch Live Hub
+              Full Page
+            </a>
+            <button class="btn-launch secondary" onclick="switchView('esoc')" title="Preview inside portal embed">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+              Live Embed
             </button>
-            <a href="hubs/eSOC.html" target="_blank" rel="noopener noreferrer" class="btn-secondary" title="Open eSOC in new tab">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <a href="hubs/eSOC.html" target="_blank" rel="noopener noreferrer" class="btn-launch secondary" title="Open eSOC in new tab">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                 <polyline points="15 3 21 3 21 9"/>
                 <line x1="10" y1="14" x2="21" y2="3"/>
               </svg>
-              Open Tab
+              New Tab
             </a>
           </div>
         </article>
@@ -166,9 +208,18 @@
           </div>
           <h3 class="hub-title">eCTHP Study Hub</h3>
           <div class="hub-subtitle">INE Certified Threat Hunting Professional</div>
+
+          <!-- Visual Preview Mockup -->
+          <div class="hub-preview-wrapper">
+            <a href="hubs/eCTHP.html" title="Open eCTHP Study Hub">
+              <img src="assets/images/ecthp-preview.svg" alt="eCTHP Study Hub Dashboard Preview" class="hub-preview-img" width="900" height="520" loading="lazy" />
+            </a>
+          </div>
+
           <p class="hub-summary">
             An advanced hunting portal focused on hypothesis-driven detection of advanced adversaries who evade automated defenses. Covers threat intelligence integration, hunting strategies, endpoint anomalies, memory forensics, and network beacon analysis.
           </p>
+
           <div class="hub-tags">
             <span class="tag-pill">5 Core Courses</span>
             <span class="tag-pill">Hypothesis Generation</span>
@@ -176,20 +227,48 @@
             <span class="tag-pill">Endpoint Forensics</span>
             <span class="tag-pill">MITRE ATT&amp;CK Mapping</span>
           </div>
-          <div class="hub-actions">
-            <button class="btn-primary" onclick="switchView('ecthp')">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+          <!-- Quick Syllabus Drawer -->
+          <button class="syllabus-toggle" onclick="toggleSyllabus('ecthp-syllabus')" aria-expanded="false">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/>
+              <line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/>
+            </svg>
+            Explore 5 Hunting Tracks
+          </button>
+          <div class="syllabus-list" id="ecthp-syllabus">
+            <ul>
+              <li><span><span class="course-code">T01</span> Introduction to Threat Hunting &amp; Mindset</span><span class="course-dur">Foundations</span></li>
+              <li><span><span class="course-code">T02</span> Cyber Threat Intelligence in Hunting</span><span class="course-dur">CTI &amp; TTPs</span></li>
+              <li><span><span class="course-code">T03</span> Threat Hunting Strategies &amp; Hypotheses</span><span class="course-dur">Methodologies</span></li>
+              <li><span><span class="course-code">T04</span> Network Threat Hunting (C2 &amp; Beacons)</span><span class="course-dur">PCAP &amp; Zeek</span></li>
+              <li><span><span class="course-code">T05</span> Endpoint Threat Hunting &amp; Volatility</span><span class="course-dur">Memory &amp; EDR</span></li>
+            </ul>
+          </div>
+
+          <!-- 3-Way Simplified Launch Options -->
+          <div class="launch-grid">
+            <a href="hubs/eCTHP.html" class="btn-launch primary-ecthp" title="Launch eCTHP in Full Window">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polygon points="5 3 19 12 5 21 5 3"/>
               </svg>
-              Launch Live Hub
+              Full Page
+            </a>
+            <button class="btn-launch secondary" onclick="switchView('ecthp')" title="Preview inside portal embed">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+              Live Embed
             </button>
-            <a href="hubs/eCTHP.html" target="_blank" rel="noopener noreferrer" class="btn-secondary" title="Open eCTHP in new tab">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <a href="hubs/eCTHP.html" target="_blank" rel="noopener noreferrer" class="btn-launch secondary" title="Open eCTHP in new tab">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                 <polyline points="15 3 21 3 21 9"/>
                 <line x1="10" y1="14" x2="21" y2="3"/>
               </svg>
-              Open Tab
+              New Tab
             </a>
           </div>
         </article>
@@ -385,6 +464,17 @@
       const wrapper = document.getElementById(wrapperId);
       if (wrapper) {
         wrapper.classList.toggle('fullscreen-mode');
+      }
+    }
+
+    function toggleSyllabus(listId) {
+      const list = document.getElementById(listId);
+      if (list) {
+        const isOpen = list.classList.toggle('is-open');
+        const btn = list.previousElementSibling;
+        if (btn) {
+          btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        }
       }
     }
 

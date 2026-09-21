@@ -81,6 +81,16 @@ graph LR
 
 ---
 
+## 📸 Interactive Hub Previews
+
+### eSOC Study Hub (Security Operations Certified – Level 1)
+[![eSOC Study Hub Preview](assets/images/esoc-preview.svg)](hubs/eSOC.html)
+
+### eCTHP Study Hub (Certified Threat Hunting Professional)
+[![eCTHP Study Hub Preview](assets/images/ecthp-preview.svg)](hubs/eCTHP.html)
+
+---
+
 ## 📂 Repository Structure
 
 ```text
