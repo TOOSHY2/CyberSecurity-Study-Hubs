@@ -49,35 +49,6 @@
 
 Modern enterprise cyber defense requires seamless synergy between **Reactive Alert Handling** and **Proactive Adversary Hunting**. Relying solely on SIEM alerts creates visibility blind spots, while unfocused hunting without operational baseline telemetry wastes critical analyst hours.
 
-This repository unifies both disciplines into a high-fidelity, interactive reference architecture:
-
-```mermaid
-flowchart TD
-    subgraph Portal["Unified Executive Portal (index.html)"]
-        CC["Command Center Dashboard & Matrix"]
-    end
-
-    subgraph Reactive["🛡️ Pillar 1: Security Operations (eSOC - Reactive)"]
-        direction TB
-        R1["Alert Ingestion & SIEM Queries"] --> R2["Phishing & Malware Analysis"]
-        R2 --> R3["Endpoint Telemetry & Event Logs"]
-        R3 --> R4["Packet Analysis (Wireshark / TCPDump)"]
-        R4 --> R5["Incident Triage & NIST Containment"]
-    end
-
-    subgraph Proactive["🎯 Pillar 2: Threat Hunting (eCTHP - Proactive)"]
-        direction TB
-        P1["Threat Intelligence & Adversary TTPs"] --> P2["Hypothesis Generation & MITRE ATT&CK"]
-        P2 --> P3["Endpoint Forensics & Memory Volatility"]
-        P3 --> P4["Network Beaconing & C2 Anomaly Hunt"]
-        P4 --> P5["Detection Engineering & Feedback Loop"]
-    end
-
-    CC -->|Direct / Embed| Reactive
-    CC -->|Direct / Embed| Proactive
-    P5 -.->|"Continuous Feedback: Custom Rules & Signatures"| R1
-```
-
 ---
 
 ## 🗺 Architecture & Curriculum Map
