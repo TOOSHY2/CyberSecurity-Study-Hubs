@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="CyberSecurity Study Hubs — Unified executive command center bridging reactive SOC operations (eSOC) and proactive enterprise threat hunting (eCTHP)." />
+  <meta name="description" content="CyberSecurity Study Hubs — Executive command center bridging reactive SOC operations (eSOC) and proactive enterprise threat hunting (eCTHP)." />
   <meta name="theme-color" content="#090a0f" />
   <title>CyberSecurity Study Hubs | Command Center Portal</title>
   <link rel="stylesheet" href="assets/css/portal.css" />
@@ -12,7 +12,7 @@
   <div class="portal-container">
     <!-- Top Navigation Bar -->
     <header class="top-navbar" role="banner">
-      <a href="#overview" class="brand" onclick="switchView('overview')">
+      <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/" class="brand">
         <div class="brand-icon" aria-hidden="true">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -27,15 +27,15 @@
       </a>
 
       <div class="nav-actions">
-        <span class="status-badge">
+        <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/" class="status-badge" title="Live GitHub Pages Deployment">
           <span class="status-dot"></span>
-          PORTAL ONLINE
-        </span>
+          PAGES LIVE
+        </a>
         <a href="https://github.com/TOOSHY2/CyberSecurity-Study-Hubs" target="_blank" rel="noopener noreferrer" class="btn-ghost" title="GitHub Repository">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
           </svg>
-          Repository
+          GitHub Repo
         </a>
       </div>
     </header>
@@ -55,7 +55,7 @@
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
         </svg>
-        eSOC Live Hub
+        eSOC Live Workspace
       </button>
       <button class="tab-btn" id="tab-ecthp" role="tab" aria-selected="false" aria-controls="view-ecthp" onclick="switchView('ecthp')">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -65,7 +65,7 @@
           <line x1="12" y1="6" x2="12" y2="2"/>
           <line x1="12" y1="22" x2="12" y2="18"/>
         </svg>
-        eCTHP Live Hub
+        eCTHP Live Workspace
       </button>
     </nav>
 
@@ -85,6 +85,18 @@
         <p class="hero-desc">
           A synchronized, interactive repository bridging reactive Level 1 Security Operations Center (SOC) incident triage and proactive enterprise threat hunting methodologies mapped to INE Security professional curriculums.
         </p>
+
+        <!-- Direct Live Action Bar -->
+        <div style="display: flex; gap: 0.85rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2.5rem;">
+          <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/eSOC.html" class="btn-launch primary-esoc" style="padding: 0.75rem 1.4rem; font-size: 0.9rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Launch eSOC Live Workspace
+          </a>
+          <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/eCTHP.html" class="btn-launch primary-ecthp" style="padding: 0.75rem 1.4rem; font-size: 0.9rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="22" y1="12" x2="18" y2="12"/><line x1="6" y1="12" x2="2" y2="12"/><line x1="12" y1="6" x2="12" y2="2"/><line x1="12" y1="22" x2="12" y2="18"/></svg>
+            Launch eCTHP Live Workspace
+          </a>
+        </div>
       </section>
 
       <!-- Metrics Matrix -->
@@ -123,10 +135,10 @@
           <h3 class="hub-title">eSOC Study Hub</h3>
           <div class="hub-subtitle">INE Security Operations Certified – Level 1</div>
           
-          <!-- Visual Preview Mockup -->
+          <!-- Actual Screenshot Preview -->
           <div class="hub-preview-wrapper">
-            <a href="hubs/eSOC.html" title="Open eSOC Study Hub">
-              <img src="assets/images/esoc-preview.svg" alt="eSOC Study Hub Dashboard Preview" class="hub-preview-img" width="900" height="520" loading="lazy" />
+            <a href="eSOC.html" title="Launch eSOC Study Hub Live Workspace">
+              <img src="assets/images/esoc-preview.png" alt="eSOC Study Hub Live Workspace Screenshot" class="hub-preview-img" width="1440" height="900" loading="lazy" />
             </a>
           </div>
 
@@ -167,7 +179,7 @@
 
           <!-- 3-Way Simplified Launch Options -->
           <div class="launch-grid">
-            <a href="hubs/eSOC.html" class="btn-launch primary-esoc" title="Launch eSOC in Full Window">
+            <a href="eSOC.html" class="btn-launch primary-esoc" title="Launch eSOC in Full Window">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polygon points="5 3 19 12 5 21 5 3"/>
               </svg>
@@ -181,7 +193,7 @@
               </svg>
               Live Embed
             </button>
-            <a href="hubs/eSOC.html" target="_blank" rel="noopener noreferrer" class="btn-launch secondary" title="Open eSOC in new tab">
+            <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/eSOC.html" target="_blank" rel="noopener noreferrer" class="btn-launch secondary" title="Open eSOC in new tab">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                 <polyline points="15 3 21 3 21 9"/>
@@ -209,10 +221,10 @@
           <h3 class="hub-title">eCTHP Study Hub</h3>
           <div class="hub-subtitle">INE Certified Threat Hunting Professional</div>
 
-          <!-- Visual Preview Mockup -->
+          <!-- Actual Screenshot Preview -->
           <div class="hub-preview-wrapper">
-            <a href="hubs/eCTHP.html" title="Open eCTHP Study Hub">
-              <img src="assets/images/ecthp-preview.svg" alt="eCTHP Study Hub Dashboard Preview" class="hub-preview-img" width="900" height="520" loading="lazy" />
+            <a href="eCTHP.html" title="Launch eCTHP Study Hub Live Workspace">
+              <img src="assets/images/ecthp-preview.png" alt="eCTHP Study Hub Live Workspace Screenshot" class="hub-preview-img" width="1440" height="900" loading="lazy" />
             </a>
           </div>
 
@@ -248,7 +260,7 @@
 
           <!-- 3-Way Simplified Launch Options -->
           <div class="launch-grid">
-            <a href="hubs/eCTHP.html" class="btn-launch primary-ecthp" title="Launch eCTHP in Full Window">
+            <a href="eCTHP.html" class="btn-launch primary-ecthp" title="Launch eCTHP in Full Window">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polygon points="5 3 19 12 5 21 5 3"/>
               </svg>
@@ -262,7 +274,7 @@
               </svg>
               Live Embed
             </button>
-            <a href="hubs/eCTHP.html" target="_blank" rel="noopener noreferrer" class="btn-launch secondary" title="Open eCTHP in new tab">
+            <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/eCTHP.html" target="_blank" rel="noopener noreferrer" class="btn-launch secondary" title="Open eCTHP in new tab">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                 <polyline points="15 3 21 3 21 9"/>
@@ -341,7 +353,7 @@
               </svg>
               Fullscreen
             </button>
-            <a href="hubs/eSOC.html" target="_blank" rel="noopener noreferrer" class="btn-ghost" title="Open in dedicated tab">
+            <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/eSOC.html" target="_blank" rel="noopener noreferrer" class="btn-ghost" title="Open in dedicated tab">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                 <polyline points="15 3 21 3 21 9"/>
@@ -352,7 +364,7 @@
           </div>
         </div>
         <div class="iframe-container">
-          <iframe id="frame-esoc" data-src="hubs/eSOC.html" title="eSOC Study Hub Live Preview" loading="lazy"></iframe>
+          <iframe id="frame-esoc" data-src="eSOC.html" title="eSOC Study Hub Live Preview" loading="lazy"></iframe>
         </div>
       </div>
     </section>
@@ -384,7 +396,7 @@
               </svg>
               Fullscreen
             </button>
-            <a href="hubs/eCTHP.html" target="_blank" rel="noopener noreferrer" class="btn-ghost" title="Open in dedicated tab">
+            <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/eCTHP.html" target="_blank" rel="noopener noreferrer" class="btn-ghost" title="Open in dedicated tab">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                 <polyline points="15 3 21 3 21 9"/>
@@ -395,7 +407,7 @@
           </div>
         </div>
         <div class="iframe-container">
-          <iframe id="frame-ecthp" data-src="hubs/eCTHP.html" title="eCTHP Study Hub Live Preview" loading="lazy"></iframe>
+          <iframe id="frame-ecthp" data-src="eCTHP.html" title="eCTHP Study Hub Live Preview" loading="lazy"></iframe>
         </div>
       </div>
     </section>

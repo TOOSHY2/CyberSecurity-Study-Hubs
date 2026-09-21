@@ -1,93 +1,138 @@
 # CyberSecurity Study Hubs — Executive Defense & Threat Hunting Architecture
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge&logo=open-source-initiative&logoColor=white)](LICENSE)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Active-success.svg?style=for-the-badge&logo=github&logoColor=white)](https://pages.github.com/)
-[![Security Posture](https://img.shields.io/badge/Security-Hardened%20%2F%20Safe-22d3ee.svg?style=for-the-badge&logo=shield&logoColor=white)](#academic--security-disclaimer)
-[![INE Security](https://img.shields.io/badge/Curriculum-INE%20Security-orange.svg?style=for-the-badge&logo=target&logoColor=white)](https://ine.com/)
-[![Platform](https://img.shields.io/badge/Platform-Client--Side%20SPA-60a5fa.svg?style=for-the-badge&logo=html5&logoColor=white)](#features--capabilities)
+<p align="center">
+  <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/"><img src="https://img.shields.io/badge/GitHub%20Pages-Live%20Portal-000000?style=for-the-badge&logo=githubpages&logoColor=22d3ee" alt="GitHub Pages Live Portal" /></a>
+  <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/eSOC.html"><img src="https://img.shields.io/badge/eSOC-Live%20Workspace-2563eb?style=for-the-badge&logo=target&logoColor=white" alt="eSOC Live Workspace" /></a>
+  <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/eCTHP.html"><img src="https://img.shields.io/badge/eCTHP-Live%20Workspace-0891b2?style=for-the-badge&logo=radar&logoColor=white" alt="eCTHP Live Workspace" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge&logo=open-source-initiative&logoColor=white" alt="License: MIT" /></a>
+  <a href="#-academic--security-disclaimer"><img src="https://img.shields.io/badge/Security-Hardened%20%2F%20Safe-10b981.svg?style=for-the-badge&logo=shield&logoColor=white" alt="Security Posture" /></a>
+  <a href="https://ine.com/"><img src="https://img.shields.io/badge/Curriculum-INE%20Security-ea580c.svg?style=for-the-badge&logo=target&logoColor=white" alt="INE Security" /></a>
+</p>
 
-> **Executive Summary:** A synchronized, client-side cybersecurity knowledge portal bridging **Reactive Defensive Operations** (SOC Analyst Level 1 / eSOC) and **Proactive Adversary Hunting** (Certified Threat Hunting Professional / eCTHP). Built as a self-contained, responsive dashboard ready for immediate deployment on GitHub Pages.
+<p align="center">
+  <strong>A synchronized, client-side cybersecurity knowledge portal bridging Reactive SOC Operations (Tier-1 / eSOC) and Proactive Enterprise Threat Hunting (eCTHP).</strong>
+</p>
+
+---
+
+## ⚡ Direct Quick Access & Live Demos
+
+| 🌐 **Main Executive Portal** | 🛡️ **eSOC Live Workspace** | 🎯 **eCTHP Live Workspace** |
+| :--- | :--- | :--- |
+| Unified Command Center & Matrix | Reactive Defense & Incident Triage | Proactive Threat Hunting & Forensics |
+| [👉 Launch Executive Portal](https://tooshy2.github.io/CyberSecurity-Study-Hubs/) | [👉 Launch eSOC Workspace](https://tooshy2.github.io/CyberSecurity-Study-Hubs/eSOC.html) | [👉 Launch eCTHP Workspace](https://tooshy2.github.io/CyberSecurity-Study-Hubs/eCTHP.html) |
 
 ---
 
 ## 📑 Table of Contents
 
-- [Executive Overview & Architecture](#-executive-overview--architecture)
-- [The Dual-Pillar Strategy](#-the-dual-pillar-strategy)
-  - [1. eSOC Study Hub (Reactive Defense)](#1-esoc-study-hub-reactive-defense)
-  - [2. eCTHP Study Hub (Proactive Threat Hunting)](#2-ecthp-study-hub-proactive-threat-hunting)
+- [Executive Overview & Dual Strategy](#-executive-overview--dual-strategy)
+- [Architecture & Curriculum Map](#-architecture--curriculum-map)
+  - [1. Security Operations (Reactive Defense — eSOC)](#1-security-operations-reactive-defense--esoc)
+  - [2. Threat Hunting (Proactive Adversary Hunting — eCTHP)](#2-threat-hunting-proactive-adversary-hunting--ecthp)
+- [Visual Previews & Workspaces](#-visual-previews--workspaces)
+  - [eSOC Study Hub Live Workspace](#esoc-study-hub-live-workspace)
+  - [eCTHP Study Hub Live Workspace](#ecthp-study-hub-live-workspace)
 - [Repository Structure](#-repository-structure)
-- [Features & Capabilities](#-features--capabilities)
-- [Local Setup & Deployment](#-local-setup--deployment)
-  - [Option A: GitHub Pages (Recommended)](#option-a-github-pages-recommended)
-  - [Option B: Local HTTP Server](#option-b-local-http-server)
-  - [Option C: VS Code Live Server](#option-c-vs-code-live-server)
+- [Core Capabilities & Engineering](#-core-capabilities--engineering)
+- [How to Access & Run Locally](#-how-to-access--run-locally)
+  - [Option 1: Web Browser Direct (No Setup)](#option-1-web-browser-direct-no-setup)
+  - [Option 2: Local HTTP Server (Python)](#option-2-local-http-server-python)
+  - [Option 3: Node.js / npx serve](#option-3-nodejs--npx-serve)
+  - [Option 4: VS Code Live Server](#option-4-vs-code-live-server)
 - [Academic & Security Disclaimer](#-academic--security-disclaimer)
-- [License & Authorship](#-license--authorship)
+- [License & Credits](#-license--credits)
 
 ---
 
-## 🏛 Executive Overview & Architecture
+## 🏛 Executive Overview & Dual Strategy
 
-Modern enterprise security operations fail when relying solely on alert-driven monitoring or purely manual hunting without operational baselines. This repository unifies the two complementary halves of defensive engineering into an integrated, interactive knowledge base:
+Modern enterprise cyber defense requires seamless synergy between **Reactive Alert Handling** and **Proactive Adversary Hunting**. Relying solely on SIEM alerts creates visibility blind spots, while unfocused hunting without operational baseline telemetry wastes critical analyst hours.
+
+This repository unifies both disciplines into a high-fidelity, interactive reference architecture:
 
 ```mermaid
-graph LR
-    subgraph Portal["Unified Portal: index.html"]
-        CC[Command Center Dashboard]
+flowchart TD
+    subgraph Portal["Unified Executive Portal (index.html)"]
+        CC["Command Center Dashboard & Matrix"]
     end
 
-    subgraph Reactive["Pillar 1: Reactive Defense (eSOC)"]
-        A1[Alert Ingestion & SIEM] --> A2[Packet & Network Triage]
-        A2 --> A3[Host Artifact Analysis]
-        A3 --> A4[Incident Containment & Escalation]
+    subgraph Reactive["🛡️ Pillar 1: Security Operations (eSOC - Reactive)"]
+        direction TB
+        R1["Alert Ingestion & SIEM Queries"] --> R2["Phishing & Malware Analysis"]
+        R2 --> R3["Endpoint Telemetry & Event Logs"]
+        R3 --> R4["Packet Analysis (Wireshark / TCPDump)"]
+        R4 --> R5["Incident Triage & NIST Containment"]
     end
 
-    subgraph Proactive["Pillar 2: Proactive Hunting (eCTHP)"]
-        H1[Adversary Intelligence / CTI] --> H2[Hypothesis Formulation]
-        H2 --> H3[Endpoint & Memory Forensics]
-        H3 --> H4[Network Beacon & Anomaly Analysis]
-        H4 --> H5[Detection Engineering & Gap Remediation]
+    subgraph Proactive["🎯 Pillar 2: Threat Hunting (eCTHP - Proactive)"]
+        direction TB
+        P1["Threat Intelligence & Adversary TTPs"] --> P2["Hypothesis Generation & MITRE ATT&CK"]
+        P2 --> P3["Endpoint Forensics & Memory Volatility"]
+        P3 --> P4["Network Beaconing & C2 Anomaly Hunt"]
+        P4 --> P5["Detection Engineering & Feedback Loop"]
     end
 
-    CC -->|Embed / Direct Link| Reactive
-    CC -->|Embed / Direct Link| Proactive
-    H5 -.->|Feedback Loop: New Rules| A1
+    CC -->|Direct / Embed| Reactive
+    CC -->|Direct / Embed| Proactive
+    P5 -.->|"Continuous Feedback: Custom Rules & Signatures"| R1
 ```
 
 ---
 
-## 🛡 The Dual-Pillar Strategy
+## 🗺 Architecture & Curriculum Map
 
-### 1. eSOC Study Hub (Reactive Defense)
-- **Certification Track:** INE Security Operations Certified – Level 1 (`eSOC`)
-- **Scope:** 10 Courses (~77 Hours of Structured Material)
-- **Target Role:** Frontline SOC Analyst (Tier 1 / Tier 2)
-- **Key Competencies:**
-  - Security Information and Event Management (SIEM) query construction and alert triage.
-  - Deep packet inspection with Wireshark and `tcpdump`.
-  - Endpoint telemetry examination (Windows Event Logs, Sysmon, Linux audit logs).
-  - Triage decision trees, false-positive elimination, and incident ticket handling.
+### 1. Security Operations (Reactive Defense — eSOC)
+- **Target Certification:** INE Security Operations Certified – Level 1 (`eSOC`)
+- **Curriculum Scope:** 10 Comprehensive Courses (76h 57m Total Duration)
+- **Primary Operational Focus:**
+  * **Log Analysis & SIEM Operations:** Query building in Splunk, Elastic, and KQL; parsing Windows Event Logs (Security, System, Sysmon) and Linux `auditd`/`syslog`.
+  * **Alert Triage & Correlation:** Differentiating True Positives from False Positives, noise reduction, and SLA-compliant incident escalation.
+  * **Malware & Phishing Analysis:** Header inspection, SPF/DKIM/DMARC verification, static triage of suspicious attachments, and sandbox analysis.
+  * **Network Packet Inspection:** Deep-packet triage with Wireshark and `tcpdump`, protocol validation, and TCP stream reassembly.
+  * **Incident Detection & Response:** Applying the NIST SP 800-61 / SANS PICERL framework to contain host breaches and preserve evidence.
 
-### 2. eCTHP Study Hub (Proactive Threat Hunting)
-- **Certification Track:** INE Certified Threat Hunting Professional (`eCTHP`)
-- **Scope:** 5 Core Hunting Modules
-- **Target Role:** Threat Hunter / Senior Incident Responder / Cyber Threat Intelligence Analyst
-- **Key Competencies:**
-  - Hypothesis formulation leveraging the MITRE ATT&CK® framework and Cyber Threat Intelligence (CTI).
-  - Hunting for persistence mechanisms, privilege escalation, and lateral movement.
-  - Volatility-based memory analysis and process injection identification.
-  - Network baseline anomaly identification, command-and-control (C2) beacon analysis, and DNS tunneling detection.
+### 2. Threat Hunting (Proactive Adversary Hunting — eCTHP)
+- **Target Certification:** INE Certified Threat Hunting Professional (`eCTHP`)
+- **Curriculum Scope:** 5 Advanced Hunting Modules
+- **Primary Operational Focus:**
+  * **Hypothesis Generation:** Formulating structured hunts based on threat intelligence reports, environmental anomalies, and MITRE ATT&CK® matrix tactics.
+  * **Adversary TTP Mapping:** Deconstructing threat actors using the Diamond Model of Intrusion Analysis and the Pyramid of Pain.
+  * **Endpoint Hunting & Memory Volatility:** Hunting for process injection (DLL injection, process hollowing, reflective DLL loading), persistence mechanisms, and memory artifacts using Volatility.
+  * **Network Threat Hunting:** Uncovering C2 channels, periodic beaconing, DNS tunneling, JA3/JA3S fingerprint anomalies, and HTTP user-agent outliers.
+  * **Detection Engineering:** Translating successful hunt discoveries into automated Sigma rules, YARA signatures, and SIEM correlation searches.
 
 ---
 
-## 📸 Interactive Hub Previews
+## 📸 Visual Previews & Workspaces
 
-### eSOC Study Hub (Security Operations Certified – Level 1)
-[![eSOC Study Hub Preview](assets/images/esoc-preview.svg)](hubs/eSOC.html)
+### eSOC Study Hub Live Workspace
+> Comprehensive interactive dashboard featuring shortcut navigation, per-course deep modules, packet analysis syntax, and log triage decision trees.
 
-### eCTHP Study Hub (Certified Threat Hunting Professional)
-[![eCTHP Study Hub Preview](assets/images/ecthp-preview.svg)](hubs/eCTHP.html)
+<p align="center">
+  <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/eSOC.html">
+    <img src="assets/images/esoc-preview.png" alt="eSOC Study Hub Live Workspace Screenshot" width="880" style="border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 16px 40px rgba(0,0,0,0.6);" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/eSOC.html"><strong>👉 Open eSOC Live Workspace (Full Page)</strong></a>
+</p>
+
+---
+
+### eCTHP Study Hub Live Workspace
+> Advanced hunting portal providing hypothesis design workflows, memory volatility references, network beacon analysis guides, and persistence checklists.
+
+<p align="center">
+  <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/eCTHP.html">
+    <img src="assets/images/ecthp-preview.png" alt="eCTHP Study Hub Live Workspace Screenshot" width="880" style="border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 16px 40px rgba(0,0,0,0.6);" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/eCTHP.html"><strong>👉 Open eCTHP Live Workspace (Full Page)</strong></a>
+</p>
 
 ---
 
@@ -95,64 +140,66 @@ graph LR
 
 ```text
 CyberSecurity-Study-Hubs/
-├── .gitignore                   # Standard Web & OS exclusions
-├── LICENSE                      # MIT License + Educational Fair-Use Rider
-├── README.md                    # Executive Documentation (this file)
-├── index.html                   # Command Center Portal & Embedded Viewer
+├── .gitignore                      # Git exclusion rules (OS, editor, temp files)
+├── LICENSE                         # MIT License + Dedicated Privacy/Security Notice
+├── README.md                       # Executive-grade documentation (this file)
+├── index.html                      # Unified Command Center & Embedded Viewer Portal
+├── eSOC.html                       # Standalone eSOC Study Hub Workspace (1.01 MB)
+├── eCTHP.html                      # Standalone eCTHP Study Hub Workspace (435 KB)
 ├── assets/
 │   ├── css/
-│   │   └── portal.css           # Glassmorphism dark-cyber styling
-│   └── icons/                   # Shared SVG graphics & vectors
-└── hubs/
-    ├── eSOC.html                # Interactive eSOC Study Hub (Single-Page App)
-    └── eCTHP.html               # Interactive eCTHP Study Hub (Single-Page App)
+│   │   └── portal.css              # Dark cyber glassmorphism styles
+│   └── images/
+│       ├── esoc-preview.png        # Actual high-res screenshot of eSOC workspace
+│       ├── ecthp-preview.png       # Actual high-res screenshot of eCTHP workspace
+│       ├── esoc-preview.svg        # Scalable vector mockup of eSOC workspace
+│       └── ecthp-preview.svg       # Scalable vector mockup of eCTHP workspace
+└── hubs/                           # Redundant organized directory (backward compatibility)
+    ├── eSOC.html
+    └── eCTHP.html
 ```
 
 ---
 
-## ✨ Features & Capabilities
+## ✨ Core Capabilities & Engineering
 
-- **Zero-Dependency Architecture:** 100% pure HTML5, modern CSS, and vanilla JavaScript. Runs offline without build steps or `node_modules`.
-- **Integrated Live Hub Viewer:** Seamless embedded view mode with tab switching, allowing instant navigation between eSOC and eCTHP without losing portal state.
-- **Glassmorphic Cyber Aesthetic:** Designed with a high-contrast dark theme (`--bg: #090a0f`), subtle radiant haloflows, glowing borders, and crisp typography.
-- **Search & Keyboard Navigation:** Each dedicated study hub includes course shortcuts, deep section jumping, and interactive reference tables.
-- **Responsive & Clipless:** Optimized layout prevents nested scrollbar issues and clipping across desktop, tablet, and mobile screens.
+- **Zero-Dependency Architecture:** 100% native HTML5, modern CSS3, and vanilla JavaScript. Runs anywhere without Node build steps, webpack, or external packages.
+- **Embedded Interactive Switcher:** The root portal (`index.html`) embeds both workspaces via responsive iframes with zero scrollbar clipping and fullscreen toggling.
+- **High-Contrast Dark Glassmorphism:** Engineered with a unified color token system (`--bg: #090a0f`, `--cyan: #22d3ee`, `--purple: #3b82f6`, `--green: #4ade80`).
+- **Offline & Air-Gapped Ready:** Can be cloned to a USB drive or air-gapped lab environment and used immediately with any web browser.
 
 ---
 
-## 🚀 Local Setup & Deployment
+## 🚀 How to Access & Run Locally
 
-### Option A: GitHub Pages (Recommended)
-1. Push this repository to your GitHub account:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: initial commit for CyberSecurity-Study-Hubs"
-   git branch -M main
-   git remote add origin https://github.com/TOOSHY2/CyberSecurity-Study-Hubs.git
-   git push -u origin main
-   ```
-2. In the repository settings on GitHub:
-   - Navigate to **Settings** > **Pages**.
-   - Under **Build and deployment** > **Source**, select **Deploy from a branch**.
-   - Set Branch: `main` / `/ (root)` and click **Save**.
-   - Your portal will be live at `https://tooshy2.github.io/CyberSecurity-Study-Hubs/`.
+### Option 1: Web Browser Direct (No Setup)
+Simply navigate to the live GitHub Pages portal:
+- **Main Portal:** [https://tooshy2.github.io/CyberSecurity-Study-Hubs/](https://tooshy2.github.io/CyberSecurity-Study-Hubs/)
+- **eSOC Hub:** [https://tooshy2.github.io/CyberSecurity-Study-Hubs/eSOC.html](https://tooshy2.github.io/CyberSecurity-Study-Hubs/eSOC.html)
+- **eCTHP Hub:** [https://tooshy2.github.io/CyberSecurity-Study-Hubs/eCTHP.html](https://tooshy2.github.io/CyberSecurity-Study-Hubs/eCTHP.html)
 
-### Option B: Local HTTP Server
-Using Python 3:
+Or download the repository and double-click `index.html`, `eSOC.html`, or `eCTHP.html`.
+
+### Option 2: Local HTTP Server (Python)
 ```bash
-# Inside A:\CyberSecurity-Study-Hubs
+# Clone the repository
+git clone https://github.com/TOOSHY2/CyberSecurity-Study-Hubs.git
+cd CyberSecurity-Study-Hubs
+
+# Start local server on port 8080
 python -m http.server 8080
 ```
-Then browse to `http://localhost:8080`.
+Browse to `http://localhost:8080/`.
 
-Using Node.js / npx:
+### Option 3: Node.js / npx serve
 ```bash
 npx serve .
 ```
 
-### Option C: VS Code Live Server
-Right-click `index.html` in VS Code and select **"Open with Live Server"**.
+### Option 4: VS Code Live Server
+1. Open the project folder in VS Code.
+2. Right-click `index.html` (or `eSOC.html` / `eCTHP.html`).
+3. Click **"Open with Live Server"**.
 
 ---
 
@@ -160,12 +207,14 @@ Right-click `index.html` in VS Code and select **"Open with Live Server"**.
 
 > [!IMPORTANT]
 > **Educational & Fair-Use Notice:**
-> - These study hubs and synthesized notes are **independent, personal educational resources** developed by the author for certification preparation and professional reference.
-> - All certifications, syllabus frameworks, and course designations (`eSOC`, `eCTHP`) are registered trademarks and proprietary assets of **[INE Security](https://ine.com/)** (formerly eLearnSecurity). Full credit and attribution are extended to INE and their instructional staff.
-> - **Compliance & Integrity:** This repository contains **NO proprietary examination questions, leaked test dumps, or confidential evaluation material**. All explanations, commands, and workflows are original syntheses grounded in publicly available cyber defense documentation and general industry standards.
+> - These study hubs and synthesized notes are **independent, personal educational resources** developed by the author for certification preparation, professional competence, and technical reference.
+> - All certification titles, course frameworks, and curriculum tracks (`eSOC`, `eCTHP`) are registered trademarks and intellectual property of **[INE Security](https://ine.com/)** (formerly eLearnSecurity). Full academic credit and attribution are extended to INE Security and their instructional staff.
+> - **Integrity & Compliance:** This repository contains **NO proprietary examination questions, leaked test dumps, or confidential evaluation material**. All explanations, commands, and workflows represent original syntheses derived from public defensive security documentation and general industry standards.
 
 ---
 
-## 📄 License & Authorship
+## 📄 License & Credits
 
-Distributed under the **MIT License**. See [LICENSE](LICENSE) for full legal text and permissions.
+- **License:** Distributed under the permissive [MIT License](LICENSE) with an appended Educational & Security Fair-Use rider.
+- **Author:** Hasan ([TOOSHY2](https://github.com/TOOSHY2))
+- **Training Provider:** [INE Security](https://ine.com/)
