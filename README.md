@@ -2,8 +2,8 @@
 
 <p align="center">
   <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/"><img src="https://img.shields.io/badge/GitHub%20Pages-Live%20Portal-000000?style=for-the-badge&logo=githubpages&logoColor=22d3ee" alt="GitHub Pages Live Portal" /></a>
-  <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/eSOC.html"><img src="https://img.shields.io/badge/eSOC-Live%20Workspace-2563eb?style=for-the-badge&logo=target&logoColor=white" alt="eSOC Live Workspace" /></a>
-  <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/eCTHP.html"><img src="https://img.shields.io/badge/eCTHP-Live%20Workspace-0891b2?style=for-the-badge&logo=radar&logoColor=white" alt="eCTHP Live Workspace" /></a>
+  <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/hubs/eSOC.html"><img src="https://img.shields.io/badge/eSOC-Live%20Workspace-2563eb?style=for-the-badge&logo=target&logoColor=white" alt="eSOC Live Workspace" /></a>
+  <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/hubs/eCTHP.html"><img src="https://img.shields.io/badge/eCTHP-Live%20Workspace-0891b2?style=for-the-badge&logo=radar&logoColor=white" alt="eCTHP Live Workspace" /></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge&logo=open-source-initiative&logoColor=white" alt="License: MIT" /></a>
   <a href="#-academic--security-disclaimer"><img src="https://img.shields.io/badge/Security-Hardened%20%2F%20Safe-10b981.svg?style=for-the-badge&logo=shield&logoColor=white" alt="Security Posture" /></a>
   <a href="https://ine.com/"><img src="https://img.shields.io/badge/Curriculum-INE%20Security-ea580c.svg?style=for-the-badge&logo=target&logoColor=white" alt="INE Security" /></a>
@@ -20,7 +20,7 @@
 | 🌐 **Main Executive Portal** | 🛡️ **eSOC Live Workspace** | 🎯 **eCTHP Live Workspace** |
 | :--- | :--- | :--- |
 | Unified Command Center & Matrix | Reactive Defense & Incident Triage | Proactive Threat Hunting & Forensics |
-| [👉 Launch Executive Portal](https://tooshy2.github.io/CyberSecurity-Study-Hubs/) | [👉 Launch eSOC Workspace](https://tooshy2.github.io/CyberSecurity-Study-Hubs/eSOC.html) | [👉 Launch eCTHP Workspace](https://tooshy2.github.io/CyberSecurity-Study-Hubs/eCTHP.html) |
+| [👉 Launch Executive Portal](https://tooshy2.github.io/CyberSecurity-Study-Hubs/) | [👉 Launch eSOC Workspace](https://tooshy2.github.io/CyberSecurity-Study-Hubs/hubs/eSOC.html) | [👉 Launch eCTHP Workspace](https://tooshy2.github.io/CyberSecurity-Study-Hubs/hubs/eCTHP.html) |
 
 ---
 
@@ -81,13 +81,13 @@ Modern enterprise cyber defense requires seamless synergy between **Reactive Ale
 > Comprehensive interactive dashboard featuring shortcut navigation, per-course deep modules, packet analysis syntax, and log triage decision trees.
 
 <p align="center">
-  <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/eSOC.html">
+  <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/hubs/eSOC.html">
     <img src="assets/images/esoc-preview.png" alt="eSOC Study Hub Live Workspace Screenshot" width="880" style="border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 16px 40px rgba(0,0,0,0.6);" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/eSOC.html"><strong>👉 Open eSOC Live Workspace (Full Page)</strong></a>
+  <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/hubs/eSOC.html"><strong>👉 Open eSOC Live Workspace (Full Page)</strong></a>
 </p>
 
 ---
@@ -96,13 +96,13 @@ Modern enterprise cyber defense requires seamless synergy between **Reactive Ale
 > Advanced hunting portal providing hypothesis design workflows, memory volatility references, network beacon analysis guides, and persistence checklists.
 
 <p align="center">
-  <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/eCTHP.html">
+  <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/hubs/eCTHP.html">
     <img src="assets/images/ecthp-preview.png" alt="eCTHP Study Hub Live Workspace Screenshot" width="880" style="border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 16px 40px rgba(0,0,0,0.6);" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/eCTHP.html"><strong>👉 Open eCTHP Live Workspace (Full Page)</strong></a>
+  <a href="https://tooshy2.github.io/CyberSecurity-Study-Hubs/hubs/eCTHP.html"><strong>👉 Open eCTHP Live Workspace (Full Page)</strong></a>
 </p>
 
 ---
@@ -115,19 +115,19 @@ CyberSecurity-Study-Hubs/
 ├── LICENSE                         # MIT License + Dedicated Privacy/Security Notice
 ├── README.md                       # Executive-grade documentation (this file)
 ├── index.html                      # Unified Command Center & Embedded Viewer Portal
-├── eSOC.html                       # Standalone eSOC Study Hub Workspace (1.01 MB)
-├── eCTHP.html                      # Standalone eCTHP Study Hub Workspace (435 KB)
 ├── assets/
 │   ├── css/
 │   │   └── portal.css              # Dark cyber glassmorphism styles
+│   ├── js/
+│   │   └── shield.min.js           # Anti-tamper & client-side security shield
 │   └── images/
 │       ├── esoc-preview.png        # Actual high-res screenshot of eSOC workspace
 │       ├── ecthp-preview.png       # Actual high-res screenshot of eCTHP workspace
 │       ├── esoc-preview.svg        # Scalable vector mockup of eSOC workspace
 │       └── ecthp-preview.svg       # Scalable vector mockup of eCTHP workspace
-└── hubs/                           # Redundant organized directory (backward compatibility)
-    ├── eSOC.html
-    └── eCTHP.html
+└── hubs/
+    ├── eSOC.html                   # eSOC Study Hub Workspace (1.01 MB)
+    └── eCTHP.html                  # eCTHP Study Hub Workspace (435 KB)
 ```
 
 ---
@@ -146,10 +146,10 @@ CyberSecurity-Study-Hubs/
 ### Option 1: Web Browser Direct (No Setup)
 Simply navigate to the live GitHub Pages portal:
 - **Main Portal:** [https://tooshy2.github.io/CyberSecurity-Study-Hubs/](https://tooshy2.github.io/CyberSecurity-Study-Hubs/)
-- **eSOC Hub:** [https://tooshy2.github.io/CyberSecurity-Study-Hubs/eSOC.html](https://tooshy2.github.io/CyberSecurity-Study-Hubs/eSOC.html)
-- **eCTHP Hub:** [https://tooshy2.github.io/CyberSecurity-Study-Hubs/eCTHP.html](https://tooshy2.github.io/CyberSecurity-Study-Hubs/eCTHP.html)
+- **eSOC Hub:** [https://tooshy2.github.io/CyberSecurity-Study-Hubs/hubs/eSOC.html](https://tooshy2.github.io/CyberSecurity-Study-Hubs/hubs/eSOC.html)
+- **eCTHP Hub:** [https://tooshy2.github.io/CyberSecurity-Study-Hubs/hubs/eCTHP.html](https://tooshy2.github.io/CyberSecurity-Study-Hubs/hubs/eCTHP.html)
 
-Or download the repository and double-click `index.html`, `eSOC.html`, or `eCTHP.html`.
+Or download the repository and double-click `index.html` or files in `hubs/`.
 
 ### Option 2: Local HTTP Server (Python)
 ```bash
